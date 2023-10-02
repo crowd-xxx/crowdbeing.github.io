@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Name for Rent / Invest in a Project / Sale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 32px;
+            color: red;
+        }
+        .domain-name {
+            font-size: 36px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .examples {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .input-group input[type="text"],
+        .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .submit-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Domain Name for Rent / Invest in a Project / Sale</h1>
+        <p class="domain-name">Crowdbing.com</p>
+        <p class="examples">Here are some meaningful website examples that can use "crowdbeing" as a domain name.</p>
+        <ul class="examples">
+            <li>Crowdfunding Investment Platform</li>
+            <li>Social Crowdfunding Network</li>
+            <li>Innovative Project Investment</li>
+            <li>Shared Economy Community</li>
+        </ul>
+        <div class="contact-form">
+            <form id="contactForm" onsubmit="return submitForm()">
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="question">Questions / Suggestions:</label>
+                    <textarea id="question" name="question" rows="4" required></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="offer">Offer:</label>
+                    <input type="text" id="offer" name="offer">
+                </div>
+                <button class="submit-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function submitForm() {
+            // Get form data
+            var email = document.getElementById('email').value;
+            var question = document.getElementById('question').value;
+            var offer = document.getElementById('offer').value;
+
+            // Send form data to the specified email address (replace with your email)
+            var subject = 'Crowdbing.com Inquiry';
+            var body = 'Email: ' + email + '\nQuestions / Suggestions: ' + question + '\nOffer: ' + offer;
+            var mailtoLink = 'mailto:am@hotmail.com.hk?subject=' + subject + '&body=' + body;
+
+            // Open the default email client with the pre-filled data
+            window.location.href = mailtoLink;
+
+            // Redirect to the "Thank you" page
+            window.location.href = 'thankyou.html';
+
+            // Prevent the form from actually submitting
+            return false;
+        }
+    </script>
+</body>
+</html>
